@@ -40,7 +40,7 @@ html, body, ul, .container, #footer
     -o-transition: opacity .5s ease-out;
   color: #ffffff;
   position: absolute;
-  top: 90vh;
+  top: 40vh;
   width: 30vh;
   height: 4vh;
   font-size: 3vh;

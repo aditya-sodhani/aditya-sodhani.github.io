@@ -1,6 +1,6 @@
 <html>
   <head>
-    <meta name="viewport" content="width=800" />
+    <meta name="viewport" content="width=980px; initial-scale=1.0;" />
     <title>Text to MP3!</title>
     <link rel="stylesheet" href="styles.css" type="text/css" />
     <link rel='shortcut icon' type='image/x-icon' href='/favicon.ico' />
@@ -32,10 +32,11 @@
         </a>
       </h1>
 
-
-      <div class="container"> 
-      <a href="#section-2" id="a-scrollArrow" onclick="smoothScroll('section-2');">
+      <div class="row">
+        <div class="col-sm-12 col-lg-12 col-md-12"> 
+        <a href="#section-2" id="a-scrollArrow" onclick="smoothScroll('section-2');">
         <span id="span-scrollArrow"></span>Scroll</a>
+        </div>
       </div>
 
     </section>
@@ -112,7 +113,7 @@
     <!-- now that we have used up all the 12 coloumbs in this row , lets go create a new "row class" , Alas in the same container -->
      </div>  <!-- end of row -->
 
-    <div id="clickLinkDiv" style="display: none;"></div>
+      <div id="clickLinkDiv" style="display: none;"></div>
 
       <br>
       <input type="submit" value="Download MP3" id="convertButton" class="btn btn-default">
@@ -122,11 +123,18 @@
 
      
 
-       </div>
-
-        <div id="footer" class="container">
-            <p class="text-muted credit">Created & Maintained by <a href="https://www.linkedin.com/in/aditya-sodhani-0212ba42/">Aditya Sodhani</a>. Powered by AWS.</p>
       </div>
+
+      <div class="row">
+        <div id="footer" class="col-sm-12 col-lg-12 col-md-12"> 
+         <p class="text-muted credit">Created & Maintained by <a href="https://www.linkedin.com/in/aditya-sodhani-0212ba42/">Aditya Sodhani</a>. Powered by AWS.</p>
+        </div>
+      </div>  
+
+
+        
+           
+     
 
      </section>
 
