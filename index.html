@@ -1,0 +1,139 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,
+    user-scalable=1.0, minimum-scale=1.0, maximum-scale=1.0"">
+    <title>Text to MP3!</title>
+    <link rel="stylesheet" href="styles.css" type="text/css" />
+    <link rel='shortcut icon' type='image/x-icon' href='/favicon.ico' />
+  <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+
+   
+        <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  
+      <link rel="stylesheet" href="bootstrap-responsive.min.css">
+  
+
+  </head>
+
+
+
+  <body{min-width: 320px;}>
+
+    
+    <script src="introScreen.js"></script>
+
+    <section id="section-1">
+   
+      <h1 style="text-align: center; color:#ffffff; padding-top:35vh; font-size:10vh; margin: 0;">
+        <a id="typeWriter" href="" class="typewrite" data-period="1500" data-type='[ "Hi, Im Aditya", "I love to develop!"]'>
+        <span class="wrap"></span>
+        </a>
+      </h1>
+
+
+      <h1 style="text-align: center; color:#ffffff; padding-top:50vh; font-size:10vh; margin: 0;">
+      <a href="#section-2" id="a-scrollArrow" onclick="smoothScroll('section-2');">
+        <span id="span-scrollArrow"></span>Scroll</a>
+      </h1>
+
+    </section>
+
+    <section id="section-2" style="min-width: 100vh; min-height: 100vh; 
+        padding: 0; margin: none; color: #ffffff;">
+
+    
+    <div id=formContainer class="container" style="padding-bottom: 0px;">  
+      <br>
+      <h1><b>Hey there!</b></h1>
+      <h3><b>Please enter file name, text & hit convert!</b></h3>
+      <div class="row">
+        <div class="col-sm-6 col-lg-6 col-md-6">
+          <h4>File Name (without extension)</h4>
+          <input class="form-control" type="text" id="inputFileName" placeholder="File Name Here">
+          <br><br>
+
+          <h4>Select Voice:</h4>
+          <select class="form-control" id="voiceSelected">
+            <option value="Ivy">Ivy [English - American]</option>
+            <option value="Joanna">Joanna [English - American]</option>
+            <option value="Joey">Joey [English - American]</option>
+            <option value="Justin">Justin [English - American]</option>
+            <option value="Kendra">Kendra [English - American]</option> 
+            <option value="Kimberly">Kimberly [English - American]</option>
+            <option value="Salli">Salli [English - American]</option>
+            <option value="Nicole">Nicole [English - Australian]</option>
+            <option value="Russell">Russell [English - Australian]</option>
+            <option value="Emma">Emma [English - British]</option>
+            <option value="Brian">Brian [English - British]</option>
+            <option value="Amy">Amy [English - British]</option>
+            <option value="Raveena">Raveena [English - Indian]</option>        
+            <option value="Geraint">Geraint [English - Welsh]</option>
+            <option value="Ricardo">Ricardo [Brazilian Portuguese]</option>
+            <option value="Vitória">Vitória [Brazilian Portuguese]</option>
+            <option value="Lotte">Lotte [Dutch]</option>
+            <option value="Ruben">Ruben [Dutch]</option>
+            <option value="Mathieu">Mathieu [French]</option>
+            <option value="Céline">Céline [French]</option>
+            <option value="Chantal">Chantal [Canadian French]</option>
+            <option value="Marlene">Marlene [German]</option>
+            <option value="Dóra">Dóra [Icelandic]</option>
+            <option value="Karl">Karl [Icelandic]</option>
+            <option value="Carla">Carla [Italian]</option>
+            <option value="Giorgio">Giorgio [Italian]</option>
+            <option value="Mizuki">Mizuki [Japanese]</option>
+            <option value="Liv">Liv [Norwegian]</option>
+            <option value="Maja">Maja [Polish]</option>
+            <option value="Jan">Jan [Polish]</option>
+            <option value="Ewa">Ewa [Polish]</option>
+            <option value="Cristiano">Cristiano [Portuquese]</option>
+            <option value="Inês">Inês [Portuquese]</option>
+            <option value="Carmen">Carmen [Romanian]</option>
+            <option value="Maxim">Maxim [Russian]</option>
+            <option value="Tatyana">Tatyana [Russian]</option>
+            <option value="Enrique">Enrique [Spanish]</option>
+            <option value="Penélope">Penélope [US Spanish]</option>
+            <option value="Enrique">Miguel [US Spanish]</option>
+            <option value="Conchita">Conchita [Castilian Spanish]</option>
+            <option value="Astrid">Astrid [Swedish]</option>
+            <option value="Filiz">Filiz [Turkish]</option>
+            <option value="Gwyneth">Gwyneth [Welsh]</option>
+          </select>        
+        </div>   
+
+        <div class="col-sm-6 col-lg-6 col-md-6">
+          <h4>Enter Text</h4>
+          <textarea class="form-control" id ="postText" placeholder="Your Text Here" style="height:27vh;"></textarea><br>
+          <span id="charCounter">Characters: 0</span>
+        </div>  
+
+
+    <!-- now that we have used up all the 12 coloumbs in this row , lets go create a new "row class" , Alas in the same container -->
+     </div>  <!-- end of row -->
+
+    <div id="clickLinkDiv" style="display: none;"></div>
+
+      <br>
+      <input type="submit" value="Download MP3" id="convertButton" class="btn btn-default">
+      <a id="ProcessingUpdates" style="color: #ffffff"></a>
+
+   
+
+     
+
+       </div>
+
+        <div id="footer" >
+            <p class="text-muted credit">Created & Maintained by <a href="https://www.linkedin.com/in/aditya-sodhani-0212ba42/">Aditya Sodhani</a>. Powered by AWS.</p>
+      </div>
+
+     </section>
+
+   
+
+    <script src="scripts.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.0/jquery.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,134 @@
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans:300,400);
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html, body, ul, .container, #footer
+{
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+#section-1
+{
+    min-width: 100vh; 
+    min-height: 100vh; 
+    background-color: #4843d2; 
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+#typeWriter:hover
+{
+      text-decoration: none;
+}
+
+
+#a-scrollArrow, #span-scrollArrow {
+  padding: none;
+  position: absolute;
+  left: 50%;  
+  right: 50%;
+  text-align: center;
+}
+
+/* Text */
+#a-scrollArrow {
+  transition: opacity .5s ease-out;
+    -moz-transition: opacity .5s ease-out;
+    -webkit-transition: opacity .5s ease-out;
+    -o-transition: opacity .5s ease-out;
+  color: #ffffff;
+  position: absolute;
+  top: 90vh;
+  width: 30vh;
+  height: 4vh;
+  font-size: 3vh;
+  margin-left: -15vh;
+
+}
+
+#a-scrollArrow:hover 
+  {
+      opacity: .5;
+      color: #ffffff;
+      text-decoration: none;
+
+  }
+
+
+
+
+/* Arrow */
+#span-scrollArrow {
+
+  width: 4vh;
+  height: 4vh;
+  font-size: 1vh;
+  margin-left: -2vh;
+  border-left: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  -webkit-transform: rotateZ(-45deg);
+  transform: rotateZ(-45deg);
+  -webkit-animation: sdb06 1.5s infinite;
+  animation: sdb06 1.5s infinite;
+  box-sizing: border-box;
+    text-align: center;
+
+}
+@-webkit-keyframes sdb06 {
+  0% {
+    -webkit-transform: rotateY(0) rotateZ(-45deg) translate(0, 0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: rotateY(720deg) rotateZ(-45deg) translate(-3vh, 3vh);
+    opacity: 0;
+  }
+}
+@keyframes sdb06 {
+  0% {
+    transform: rotateY(0) rotateZ(-45deg) translate(0, 0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotateY(720deg) rotateZ(-45deg) translate(-3vh, 3vh);
+    opacity: 0;
+  }
+}
+
+
+
+#section-2
+{
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 20px;
+  border-bottom: 0px;
+  padding-bottom: 0px;  
+  background: linear-gradient(#4843d2, black); 
+  background: -prefix-linear-gradient(top, #4843d2, black);
+  background: linear-gradient(to bottom, #4843d2, black);
+
+
+
+
+}
+
+
+#footer {
+    padding-left: 10%;
+    padding-right: 10%;
+    position: absolute;
+    top: 195vh;
+    height: 5vh;
+    left: 10%;
+    width: 80%;
+    text-align: center;
+}
